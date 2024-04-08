@@ -6,6 +6,11 @@
 .main-container{
   max-width: 1200px;
   margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
 }
 
 .innermain-container{
@@ -19,7 +24,7 @@
   gap: 10px;
 }
 
-.todo-addsection input{
+.todo-addsection input,.edit-input{
   width: 300px;
   padding: 10px 10px;
   font-size: 16px;
@@ -36,10 +41,11 @@
 .todolist-section ul li{
   list-style-type: none;
   font-size: 24px;
-  text-align: center;
   padding: 10px 10px 15px 15px;
   background-color: #808080;
   color: #ffffff;
+  display: flex;
+  justify-content: space-between;
 }
 
 .todolist-section ul li:not(:last-child) {

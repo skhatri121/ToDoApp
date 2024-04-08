@@ -9,6 +9,8 @@ function addTaskFromStorage(taskText) {
   var li = document.createElement("li");
   li.textContent = taskText;
 
+  var iconsDiv = document.createElement("div");
+
   var penIcon = document.createElement("i");
   penIcon.classList.add("fa-solid", "fa-pen-to-square", "small-icon");
   penIcon.addEventListener("click", function () {
@@ -22,8 +24,10 @@ function addTaskFromStorage(taskText) {
     deleteTask(li);
   });
 
-  li.appendChild(penIcon);
-  li.appendChild(delIcon);
+  iconsDiv.appendChild(penIcon);
+  iconsDiv.appendChild(delIcon);
+
+  li.appendChild(iconsDiv);
 
   var ul = document.querySelector(".todolist-section ul");
   ul.appendChild(li);
@@ -50,7 +54,7 @@ function editTask(taskElement) {
   var inputField = document.createElement("input");
   inputField.type = "text";
   inputField.value = taskElement.textContent.trim();
-
+  inputField.classList.add("edit-input");
   taskElement.textContent = "";
   taskElement.appendChild(inputField);
 
