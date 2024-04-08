@@ -28,14 +28,16 @@
   width: 300px;
   padding: 10px 10px;
   font-size: 16px;
+  border-radius: 10px;
 }
 
 .todo-addsection button{
   border: none;
-  width: 50px;
+  width: 150px;
   cursor: pointer;
   padding: 5px;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 .todolist-section ul li{
@@ -46,6 +48,7 @@
   color: #ffffff;
   display: flex;
   justify-content: space-between;
+  border-radius: 10px;
 }
 
 .todolist-section ul li:not(:last-child) {
