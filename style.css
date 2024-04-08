@@ -1,0 +1,54 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main-container{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.innermain-container{
+  text-align: center;
+}
+
+.todo-addsection{
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.todo-addsection input{
+  width: 300px;
+  padding: 10px 10px;
+  font-size: 16px;
+}
+
+.todo-addsection button{
+  border: none;
+  width: 50px;
+  cursor: pointer;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.todolist-section ul li{
+  list-style-type: none;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 10px 15px 15px;
+  background-color: #808080;
+  color: #ffffff;
+}
+
+.todolist-section ul li:not(:last-child) {
+  border-bottom: 1px solid #ffffff; 
+}
+
+.small-icon {
+  font-size: 14px; 
+  margin-left: 15px;
+  cursor: pointer; 
+}
+
